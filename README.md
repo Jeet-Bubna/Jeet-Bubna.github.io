@@ -1,43 +1,112 @@
-# Chirpy Starter
+# System-Level Thinking
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+A technical blog about operating systems, low-level programming, and building things from first principles.
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+## About
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+This blog documents my journey exploring:
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+* Filesystems and disk structures (NTFS, partitioning, encryption)
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+* Linux internals and system behavior
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+* Low-level programming with C++ and Assembly
 
-## Usage
+* Concurrency and multithreading
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+* Practical system debugging
 
-## Contributing
+* Building real projects from scratch
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+  Rather than writing tutorials, I focus on understanding how systems actually behave under stress — what breaks, why it breaks, and what the architecture reveals.
 
-## License
+# What You'll Find Here
+## Operating Systems & Internals
 
-This work is published under [MIT][mit] License.
+Deep dives into real-world system behavior.
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+Example topics:
+
+* Partition shrinking limitations in NTFS
+
+* BitLocker and encrypted volume constraints
+
+* Filesystem metadata structures (MFT, fragmentation, immovable blocks)
+
+* Bootloaders and disk layouts
+
+## Low-Level Programming
+
+* Exploration of performance, memory, and system control.
+
+* Modern C++
+
+* Memory layout
+
+* Manual resource management
+
+* Assembly experiments
+
+* Understanding what compilers actually generate
+
+## Concurrency & Architecture
+
+Designing systems that scale beyond single-threaded logic.
+
+## Current work:
+
+* A multithreaded queue-based “Jarvis” assistant architecture
+
+* Task scheduling models
+
+* Thread-safe data structures
+
+* Synchronization strategies
+
+## Experiments & Failures
+
+Because real learning happens when things go wrong.
+
+You’ll see:
+
+System misconfigurations
+
+Debugging deep OS-level issues
+
+Performance bottlenecks
+
+Design mistakes and architectural rewrites
+
+Tech Stack
+
+C++
+
+x86 Assembly
+
+Python
+
+Linux
+
+Windows Internals
+
+Multithreading & synchronization primitives
+
+Philosophy
+
+I’m interested in:
+
+Understanding systems instead of abstracting them away
+
+Building things from the ground up
+
+Learning by breaking and rebuilding
+
+Writing about what actually happens — not what documentation claims
+
+Why This Blog Exists
+
+Because modern development often hides complexity behind frameworks.
+
+I prefer to look underneath.
+
+If something behaves unexpectedly, I want to know why.
