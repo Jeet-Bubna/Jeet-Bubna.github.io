@@ -10,7 +10,7 @@ tags:
 title: switching to linux turns traumatic because of ftps
 ---
 
-So I wanted to switch over to Linux, you know, like a sane person.
+So I wanted to switch over to Linux, you know, like a sane person. 
 
 I couldn't have foreseen the absolute terror I was going to go through
 for the next four hours.
